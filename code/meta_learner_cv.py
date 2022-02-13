@@ -77,7 +77,7 @@ class MetaLearner(object):
 	def meta_update(self, test_loader, ls):
 
 		#Walk in 'Meta update' function
-		in_, target = test_loader.__iter__().next()
+		in_, target = next(iter(test_loader))
 	
 		# We use a dummy forward / backward pass to get the correct grads into self.net
 		loss, out = forward_pass(self.observed_tissue_model, in_, target)
@@ -130,7 +130,7 @@ class MetaLearner(object):
 		#unseen_train_loader, unseen_test_loader = get_unseen_data_loader(test_feature, test_label, K, args.inner_batch_size)
 		for i in range(self.num_inner_updates):
 
-			in_, target = unseen_train_loader.__iter__().next()
+			in_, target = next(iter(unseen_train_loader))
 			loss, _  = forward_pass( unseen_tissue_model, in_, target )
 			unseen_opt.zero_grad()
 			loss.backward()
@@ -192,16 +192,13 @@ class MetaLearner(object):
 
 			if test_loss[epoch] < best_fewshot_test_loss:
 				best_fewshot_test_loss = test_loss[epoch]
-	   
 			if test_corr[epoch] > best_fewshot_test_corr:
 				best_fewshot_test_corr = test_corr[epoch]
- 
 			if train_loss[epoch] < best_fewshot_train_loss:
 				best_fewshot_train_loss = train_loss[epoch]
 				best_train_loss_epoch = epoch
-	
 			if train_corr[epoch] > best_fewshot_train_corr:
-	 			best_fewshot_train_corr = train_corr[epoch]
+				best_fewshot_train_corr = train_corr[epoch]
 				best_train_corr_epoch = epoch
 				best_train_corr_model = self.observed_tissue_model 
 		
@@ -213,14 +210,14 @@ class MetaLearner(object):
 				best_fewshot_test_spearman_corr = test_spearman_corr[epoch]	
 				best_test_spearman_epoch = epoch	
 
-			print 'Few shot', epoch, 'train_loss:', float('%.3f'%train_loss[epoch]), 'train_pearson:', float('%.3f'%train_corr[epoch]), 'train_spearman:', float('%.3f'%train_spearman_corr[epoch]),
-			print 'test_loss:', float('%.3f'%test_loss[epoch]), 'test_pearson:', float('%.3f'%test_corr[epoch]), 'test_spearman:', float('%.3f'%test_spearman_corr[epoch])
+			print('Few shot', epoch, 'train_loss:', float('%.3f'%train_loss[epoch]), 'train_pearson:', float('%.3f'%train_corr[epoch]), 'train_spearman:', float('%.3f'%train_spearman_corr[epoch]))
+			print('test_loss:', float('%.3f'%test_loss[epoch]), 'test_pearson:', float('%.3f'%test_corr[epoch]), 'test_spearman:', float('%.3f'%test_spearman_corr[epoch]))
 
 		best_train_loss_test_corr = test_corr[ best_train_loss_epoch ]
 		best_train_corr_test_corr = test_corr[ best_train_corr_epoch ]
 		best_train_corr_test_scorr = test_spearman_corr[ best_train_corr_epoch ]
 		best_train_scorr_test_scorr = test_spearman_corr[ best_train_spearman_corr_epoch ]
 		
-		print '--trial summerize--', 'best_train_loss_test_corr:', float('%.3f'%best_train_loss_test_corr), 'best_train_corr_test_corr', float('%.3f'%best_train_corr_test_corr), 'best_train_corr_test_scorr', float('%.3f'%best_train_corr_test_scorr), 'best_train_scorr_test_corr', float('%.3f'%best_train_scorr_test_scorr)
+		print('--trial summerize--', 'best_train_loss_test_corr:', float('%.3f'%best_train_loss_test_corr), 'best_train_corr_test_corr', float('%.3f'%best_train_corr_test_corr), 'best_train_corr_test_scorr', float('%.3f'%best_train_corr_test_scorr), 'best_train_scorr_test_corr', float('%.3f'%best_train_scorr_test_scorr))
 		
 		return best_train_loss_test_corr, best_train_corr_test_corr, best_train_corr_test_scorr, best_train_scorr_test_scorr, best_train_corr_model

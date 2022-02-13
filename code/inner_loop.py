@@ -52,7 +52,7 @@ class InnerLoop(mlp):
 		for i in range(self.num_updates):
 			
 			#print 'inner step', i,
-			in_, target = train_loader.__iter__().next()
+			in_, target = next(iter(train_loader))
 				
 			if i==0:
 				loss, _ = self.forward_pass( in_, target )
@@ -70,7 +70,7 @@ class InnerLoop(mlp):
 		#print 'Val Inner step Loss', val_pre_loss, val_post_loss, 'Val Inner step Acc', val_pre_acc, val_post_acc
 		
 		# Compute the meta gradient and return it
-		in_, target = val_loader.__iter__().next()
+		in_, target = next(iter(val_loader))
 		
 		loss,_ = self.forward_pass( in_, target, fast_weights ) 
 		loss = loss / in_.size()[0] # normalize loss
