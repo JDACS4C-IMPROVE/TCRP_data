@@ -39,7 +39,7 @@ def pearson_corr(x, y):
 def load_merged_data(tissue_map, drug, path='/home-nfs/wangsheng/GDSC_PDX_WP_feature/'):
 
 	#Load dataset
-	print 'Loading feature and label files...'
+	print('Loading feature and label files...')
 
 	feature_list, label_list, tissue2id, tissue_index_list = [], [], [], []
 	sample2tissue = {}
@@ -91,8 +91,8 @@ def load_merged_data(tissue_map, drug, path='/home-nfs/wangsheng/GDSC_PDX_WP_fea
 	scaler2 = preprocessing.StandardScaler().fit(PDX_label)
 	PDX_label = scaler2.transform(PDX_label)
 
-	print 'Cell line feature dimension', train_feature.shape, train_label.shape
-	print 'PDX feature dimension', PDX_feature.shape, PDX_label.shape
+	print('Cell line feature dimension'), train_feature.shape, train_label.shape
+	print('PDX feature dimension'), PDX_feature.shape, PDX_label.shape
 
 	return train_feature, train_label, tissue_index_list, PDX_feature, PDX_label, sample2tissue
 
@@ -101,7 +101,7 @@ def load_merged_data(tissue_map, drug, path='/home-nfs/wangsheng/GDSC_PDX_WP_fea
 #def load_data_cell_line(tissue_map, drug, K, path='/share/data/jinbodata/siqi/mut_exp_cnv_data/challenge_GDSC_PDTC/GDSC_won-parafac_feature/'):
 def load_data_cell_line(tissue_map, drug, K, path='/home-nfs/wangsheng/GDSC_PDX_WP_feature/'):
 	#Load dataset
-	print 'Loading feature and label files...'
+	print('Loading feature and label files...')
 	feature_map, label_map = {}, {}
 	all_tissue_feature_list = []
 
@@ -119,7 +119,7 @@ def load_data_cell_line(tissue_map, drug, K, path='/home-nfs/wangsheng/GDSC_PDX_
 	all_tissue_train_feature = np.concatenate(all_tissue_feature_list, axis=0)
 	scaler = preprocessing.StandardScaler().fit(all_tissue_train_feature)
 	#train_feature = scaler.transform(all_tissue_train_feature)
-	print 'all tissue shape', all_tissue_train_feature.shape
+	print('all tissue shape', all_tissue_train_feature.shape)
 
 	cv_feature_list, cv_label_list, cv_tissue_index_list = [], [], []
 	vali_feature_list, vali_label_list, vali_tissue_list = [], [], []
@@ -165,8 +165,8 @@ def load_data_cell_line(tissue_map, drug, K, path='/home-nfs/wangsheng/GDSC_PDX_
 		cv_label_list.append( train_label )
 		cv_tissue_index_list.append( tissue_index_list )
 
-	print 'Cross validation', len(cv_feature_list), len(cv_label_list), len(vali_feature_list), len(vali_label_list)
-	print 'Vali dimension', cv_feature_list[0].shape, vali_feature_list[0].shape, vali_label_list[0].shape
+	print('Cross validation', len(cv_feature_list), len(cv_label_list), len(vali_feature_list), len(vali_label_list))
+	print('Vali dimension', cv_feature_list[0].shape, vali_feature_list[0].shape, vali_label_list[0].shape)
 
 	#return train_feature, train_label, tissue_index_list, drug_test_feature, drug_test_label, sample2tissue
 	return cv_feature_list, cv_label_list, cv_tissue_index_list, vali_feature_list, vali_label_list, vali_tissue_list
@@ -188,7 +188,7 @@ def load_data_PDTC(drug, path='/home-nfs/wangsheng/challenge_GDSC_PDTC/GDSC_PPI_
 	#scaler2 = preprocessing.StandardScaler().fit(PDTC_label)
 	#PDTC_label = scaler2.transform(PDTC_label)
 
-	print 'PDTC feature dimension', PDTC_feature.shape, PDTC_label.shape
+	print('PDTC feature dimension', PDTC_feature.shape, PDTC_label.shape)
 
 	#return train_feature, train_label, tissue_index_list, drug_test_feature, drug_test_label, sample2tissue
 	return PDTC_feature, PDTC_label
@@ -203,7 +203,7 @@ def load_data_PDX(drug, scaler, path='/home-nfs/wangsheng/GDSC_PDX_WP_feature/')
 	#PDX_cat_label = np.load( path_suffix + '_ResponseCategory_label.npy').reshape(-1,1)
 	PDX_cat_label = np.load( path_suffix + '_TimeToDouble_label.npy').reshape(-1,1)
 
-	print PDX_feature.shape, '===='
+	print(PDX_feature.shape, '====')
 	scaler = preprocessing.StandardScaler().fit(PDX_feature)
 	PDX_feature = scaler.transform(PDX_feature)
 
@@ -212,7 +212,7 @@ def load_data_PDX(drug, scaler, path='/home-nfs/wangsheng/GDSC_PDX_WP_feature/')
 	scaler2 = preprocessing.StandardScaler().fit(PDX_label)
 	PDX_label = scaler2.transform(PDX_label)
 
-	print 'PDX feature dimension', PDX_feature.shape, PDX_label.shape
+	print('PDX feature dimension', PDX_feature.shape, PDX_label.shape)
 
 	#return train_feature, train_label, tissue_index_list, drug_test_feature, drug_test_label, sample2tissue
 	return PDX_feature, PDX_label, PDX_cat_label
@@ -222,7 +222,7 @@ def load_data_PDX(drug, scaler, path='/home-nfs/wangsheng/GDSC_PDX_WP_feature/')
 #def load_data(tissue_map, drug, K, path='/home-nfs/siqi/CancerDrugPDX/challenge_GDSC_PDX/GDSC_WON_feature/'):
 def load_data(tissue_map, drug, K, path='/home-nfs/wangsheng/challenge_GDSC_PDTC/GDSC_PPI_feature/'):
 	#Load dataset
-	print 'Loading feature and label files...'
+	print('Loading feature and label files...')
 	
 	feature_list, label_list, tissue_index_list = [], [], []
 	sample_num = 0
@@ -254,7 +254,7 @@ def load_data(tissue_map, drug, K, path='/home-nfs/wangsheng/challenge_GDSC_PDTC
 	scaler = preprocessing.StandardScaler().fit(train_feature)
 	train_feature = scaler.transform(train_feature) 
 
-	print 'Drug feature dimension', train_feature.shape, train_label.shape
+	print('Drug feature dimension', train_feature.shape, train_label.shape)
 
 	return train_feature, train_label, tissue_index_list
 	#return train_feature, train_label, tissue_index_list, scaler

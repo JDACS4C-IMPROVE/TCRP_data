@@ -58,7 +58,7 @@ np.random.seed(args.seed)
 torch.manual_seed(args.seed)
 
 tissue_list = args.tissue_list
-print tissue_list
+print(tissue_list)
 # Load tissue cell line mapping
 with open(tissue_list, 'rb') as f:
 	tissue_map = pickle.load(f)
@@ -100,5 +100,5 @@ b = np.asarray(best_train_corr_test_corr_list).mean()
 c = np.asarray(best_train_corr_test_scorr_list).mean()
 d = np.asarray(best_train_scorr_test_scorr_list).mean()
 
-print 'PDTC best_train_loss_test_corr:', float('%.3f'%a), 'best_train_corr_test_corr', float('%.3f'%b), 'best_train_corr_test_scorr', float('%.3f'%c), 'best_train_scorr_test_scorr', float('%.3f'%d)
+print('PDTC best_train_loss_test_corr:', float('%.3f'%a), 'best_train_corr_test_corr', float('%.3f'%b), 'best_train_corr_test_scorr', float('%.3f'%c), 'best_train_scorr_test_scorr', float('%.3f'%d))
 
