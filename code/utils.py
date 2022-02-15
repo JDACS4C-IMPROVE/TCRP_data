@@ -108,7 +108,7 @@ def load_data_cell_line(tissue_map, drug, K, path='/home-nfs/wangsheng/GDSC_PDX_
 	for tissue, cell_line_list in tissue_map.items():
 
 		path_suffix = path + drug + '/' + tissue + '_' + drug
-		tissue_feature = np.load(path_suffix + '_feature.npy')
+		tissue_feature = np.load(path_suffix + '_feature.npy',allow_pickle=True)
 		tissue_label = np.load(path_suffix + '_label.npy').reshape(-1,1)
 
 		feature_map[ tissue + '_' + drug ] = tissue_feature
@@ -177,7 +177,7 @@ def load_data_PDTC(drug, path='/home-nfs/wangsheng/challenge_GDSC_PDTC/GDSC_PPI_
 	#path_suffix = path + drug + '/' + 'PDTC_' + drug
 	path_suffix = path + '/' + 'PDTC_' + drug
 
-	PDTC_feature = np.load( path_suffix + '_feature.npy' )
+	PDTC_feature = np.load( path_suffix + '_feature.npy',allow_pickle=True )
 	PDTC_label = np.load( path_suffix + '_label.npy' ).reshape(-1,1)
 
 	scaler = preprocessing.StandardScaler().fit(PDTC_feature)
