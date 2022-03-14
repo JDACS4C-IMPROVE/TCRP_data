@@ -451,8 +451,6 @@ drugs_cell_line_list = list(drugs.index.unique())
 # print len(drugs_cell_line_list)
 drug_list = drugs["DRUG_ID"]
 new_drug_id = []
-for i in drug_list:
-    new_drug_id.append(drug2id_mapping[i])
 #cell_line_drug_matrix = drugs.loc[drugs['DRUG_ID'] == 1026]
 #cell_line_drug_matrix.loc[[924100,910924],'LN_IC50'].values
 drugs
@@ -478,10 +476,6 @@ PDTC_drugs = PDTC_drugs.drop(["Drug","iC50","D1_CONC","D5_CONC","perc.iC50"],axi
 
 
 # In[126]:
-
-
-PDTC_drugs
-
 
 # In[127]:
 
@@ -696,14 +690,15 @@ for drug in selected_drug_list:
         if drug == 'Nutlin-3a_(-)':
             drug = 'Nutlin-3a'
 
-        drug_folder = '/data/PDTC/drug_feature/' + drug + '/'
+        drug_folder = '/data/merged/drug_feature/' + drug + '/'
         if not os.path.exists(drug_folder):
             os.makedirs(drug_folder)
 
         # print 'Generate features', drug
 
         for tissue, tissue_cell_line_list in tissue_map.items():
-
+            if tissue=="PDTC":
+                print("This is PDTC")
             drug_specific_cell_line = set( cell_line_drug_matrix.index ) & set( tissue_cell_line_list )
             drug_specific_cell_line = list(drug_specific_cell_line)
             drug_tissue_map[tissue] = drug_specific_cell_line
@@ -732,7 +727,7 @@ for drug in selected_drug_list:
             np.save(drug_folder + tissue + '_' + drug + '_label.npy', label)
             np.save(drug_folder + tissue + '_feature_description.npy', np.asarray(feature_description))
 
-        file_handle = open("/data/PDTC/" + drug+'_tissue_cell_line_list.pkl',"wb")
+        file_handle = open("/data/merged/" + drug+'_tissue_cell_line_list.pkl',"wb")
         pickle.dump(drug_tissue_map,file_handle)
         file_handle.close()
     
