@@ -345,7 +345,7 @@ selected_drug_dict = {}
 for drug in selected_drugs:
     if drug in drug_target_map.keys():
         selected_drug_dict[drug] = drug_target_map[drug]
-
+drug
 for drug, target_list in selected_drug_dict.items():
     if drug in selected_drugs:
         drug_neighbor_map[drug] = set()
@@ -362,7 +362,6 @@ for drug, target_list in selected_drug_dict.items():
                 drug_neighbor_map[drug] = drug_neighbor_map[drug] | gene_neighbor_map[gene]
 
         if len(drug_neighbor_map[drug]) != 0:
-             selected_drug_list.append(drug)
              drug_feature_list.append( len(drug_neighbor_map[drug]) )
 sns.set_style("whitegrid")
 sns.set_context("talk")
@@ -454,67 +453,6 @@ len(filtered_mut_gene_list)
 # In[129]:
 
 
-rename_selected_drug_list = []
-temp = ["Sorafenib"]
-for drug in temp:
-    print(drug)
-#     if drug != 'Nutlin-3a (-)':
-#         continue
-    
-    if drug not in drug2id_mapping:
-        print('drug name wrong', drug)
-    else:
-        cell_line_drug_matrix = drugs.loc[drugs['Drug'] == drug]
-
-        ## print cell_line_drug_matrix
-
-        feature_exp_gene_list = list( set(drug_neighbor_map[drug]) & set(filtered_exp_gene_list) )
-        feature_mut_gene_list = list( set(drug_neighbor_map[drug]) & set(filtered_mut_gene_list) )
-        print(len(feature_exp_gene_list) + len(feature_mut_gene_list))
-        if len(feature_exp_gene_list) + len(feature_mut_gene_list) == 0:
-            continue
-        feature_description = []
-
-        drug_tissue_map = {}
-
-        drug = drug.replace(' ','_')
-
-        rename_selected_drug_list.append(drug)
-
-        # print drug
-        if drug == 'Nutlin-3a_(-)':
-            drug = 'Nutlin-3a'
-
-        drug_folder = '/data/drug_feature/' + drug + '/'
-        if not os.path.exists(drug_folder):
-            os.makedirs(drug_folder)
-
-        # print 'Generate features', drug
-
-        for tissue, tissue_cell_line_list in tissue_map.items():
-
-            drug_specific_cell_line = set( cell_line_drug_matrix.index ) & set( tissue_cell_line_list )
-            drug_specific_cell_line = list(drug_specific_cell_line)
-            drug_tissue_map[tissue] = drug_specific_cell_line
-
-            feature_list = []
-
-            if len(feature_exp_gene_list) != 0:
-                feature_list.append(new_exp_df.loc[ drug_specific_cell_line, feature_exp_gene_list ].values)
-                #for gene in feature_exp_gene_list:
-                    #feature_description.append(gene+'_expression')
-
-            if len(feature_mut_gene_list) != 0:
-                feature_list.append( mutation_df.loc[ drug_specific_cell_line, feature_mut_gene_list ].values )
-                #for gene in feature_mut_gene_list:
-                    #feature_description.append(gene+'_mutation')
-
-            feature = np.concatenate(feature_list, axis=1)
-
-
-# In[140]:
-
-
 len(drug_neighbor_map["AZ628"])
 
 
@@ -544,6 +482,8 @@ new_mutation_df = mutation_df.loc[ :, list(filtered_mut_gene_list) ]
 
 rename_selected_drug_list = []
 selected_drug_list = list(selected_drug_dict.keys())
+drugs["LN_IC50"] = np.log(drugs["iC50"])
+
 for drug in selected_drug_list:
     print(drug)
 #     if drug != 'Nutlin-3a (-)':
@@ -605,13 +545,13 @@ for drug in selected_drug_list:
 
             # print feature.shape, label.shape
 
-            np.save(drug_folder + 'PDTC_' + drug + '_feature.npy', feature )
-            np.save(drug_folder + 'PDTC' + '_' + drug + '_label.npy', label)
+            np.save(drug_folder + 'breast_' + drug + '_feature.npy', feature )
+            np.save(drug_folder + 'breast_' + drug + '_label.npy', label)
             #np.save(drug_folder + tissue + '_feature_description.npy', np.asarray(feature_description))
 
-        # file_handle = open(new_data_file + drug+'_tissue_cell_line_list.pkl',"wb")
-        # pickle.dump(drug_tissue_map,file_handle)
-        # file_handle.close()
+        file_handle = open('/data/drug_feature/' + drug+'_tissue_cell_line_list.pkl',"wb")
+        pickle.dump(drug_tissue_map,file_handle)
+        file_handle.close()
     
 file_handle = open('rename_selected_drug_list', 'w')
 for drug in rename_selected_drug_list:
