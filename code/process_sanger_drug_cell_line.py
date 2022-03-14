@@ -6,7 +6,7 @@
 
 import matplotlib
 matplotlib.use('Agg')
-get_ipython().run_line_magic('matplotlib', 'inline')
+#get_ipython().run_line_magic('matplotlib', 'inline')
 
 import os
 import pandas as pd
@@ -449,10 +449,9 @@ drugs = pd.read_csv(drug_cell_line_file,index_col=2)
 drugs = drugs.drop(["DATASET_VERSION","IC50_RESULTS_ID","MAX_CONC_MICROMOLAR","RMSE"],axis=1)
 drugs_cell_line_list = list(drugs.index.unique())
 # print len(drugs_cell_line_list)
-drug_list = drugs["DRUG_ID
+drug_list = drugs["DRUG_ID"]
 new_drug_id = []
 for i in drug_list:
-    
     new_drug_id.append(drug2id_mapping[i])
 #cell_line_drug_matrix = drugs.loc[drugs['DRUG_ID'] == 1026]
 #cell_line_drug_matrix.loc[[924100,910924],'LN_IC50'].values
