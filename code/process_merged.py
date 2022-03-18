@@ -402,10 +402,6 @@ for i in range(len(exp_gene_list)):
 # In[97]:
 
 
-selected_drugs = pd.read_csv("/code/priority_drugs.txt",names=["Drug"])
-selected_drugs = selected_drugs["Drug"].tolist()
-
-
 # In[98]:
 
 
@@ -414,7 +410,6 @@ drug_neighbor_map = {}
 selected_drug_list = []
 
 for drug, target_list in drug_target_map.items():
-    if drug in selected_drugs:
         drug_neighbor_map[drug] = set()
 
         for gene in target_list:
@@ -572,69 +567,6 @@ new_mutation_df = mutation_df.loc[ :, list(filtered_mut_gene_list) ]
 
 
 len(filtered_exp_gene_list)
-
-
-# In[152]:
-
-
-rename_selected_drug_list = []
-temp = ["Sorafenib"]
-for drug in temp:
-#     if drug != 'Nutlin-3a (-)':
-#         continue
-    if drug not in drug2id_mapping:
-        print('drug name wrong', drug)
-    else:
-        cell_line_drug_matrix = drugs.loc[drugs['DRUG_ID'] == drug2id_mapping[drug]]
-    
-
-        ## print cell_line_drug_matrix
-
-        feature_exp_gene_list = list( set(drug_neighbor_map[drug]) & set(filtered_exp_gene_list) )
-        feature_mut_gene_list = list( set(drug_neighbor_map[drug]) & set(filtered_mut_gene_list) )
-        print(len(feature_exp_gene_list) + len(feature_mut_gene_list))
-        if len(feature_exp_gene_list) + len(feature_mut_gene_list) == 0:
-            continue
-        feature_description = []
-
-        drug_tissue_map = {}
-
-        drug = drug.replace(' ','_')
-
-        rename_selected_drug_list.append(drug)
-
-        # print drug
-        if drug == 'Nutlin-3a_(-)':
-            drug = 'Nutlin-3a'
-
-        drug_folder = '/data/drug_feature/' + drug + '/'
-        if not os.path.exists(drug_folder):
-            os.makedirs(drug_folder)
-
-        # print 'Generate features', drug
-
-        for tissue, tissue_cell_line_list in tissue_map.items():
-
-            drug_specific_cell_line = set( cell_line_drug_matrix.index ) & set( tissue_cell_line_list )
-            drug_specific_cell_line = list(drug_specific_cell_line)
-            drug_tissue_map[tissue] = drug_specific_cell_line
-
-            feature_list = []
-
-            if len(feature_exp_gene_list) != 0:
-                feature_list.append(new_exp_df.loc[ drug_specific_cell_line, feature_exp_gene_list ].values)
-                #for gene in feature_exp_gene_list:
-                    #feature_description.append(gene+'_expression')
-
-            if len(feature_mut_gene_list) != 0:
-                feature_list.append( mutation_df.loc[ drug_specific_cell_line, feature_mut_gene_list ].values )
-                #for gene in feature_mut_gene_list:
-                    #feature_description.append(gene+'_mutation')
-
-            feature = np.concatenate(feature_list, axis=1)
-
-
-# In[153]:
 
 
 new_data_file = ''
