@@ -99,7 +99,7 @@ PDTC_drug_cell_line_file = PDTC_data_file + 'DrugResponsesAUCModels.tsv'
 
 #cell_line_detail_file = data_file + 'Cell_Lines_Details.csv'
 PDTC_mutation_data_file = PDTC_data_file + 'SNVsModels.tsv'
-PDTC_drug_target_file ='/data/drug_targets.tsv'
+PDTC_drug_target_file ='/data/GDSC/drug_target_list.csv'
 
 inbiomap_file = 'InBioMap_Symbol.sif'
 pathwaycomm_file = 'PathwayCommons_Symbol.sif'
@@ -117,7 +117,7 @@ drug_cell_line_file = data_file + 'v17_fitted_dose_response.csv'
 
 cell_line_detail_file = data_file + 'Cell_Lines_Details.csv'
 mutation_data_file = data_file + 'WES_variants.csv'
-drug_target_file ='/data/drug_targets.tsv'
+drug_target_file ='/data/GDSC/drug_target_list.csv'
 
 feature_folder = 'feature/'
 
@@ -230,7 +230,7 @@ drug_target_map = {}
 drug_target_list = []
 for line in file_handle:
     
-    new_line = line.rstrip().split("\t")
+    new_line = line.rstrip().split(",")
     drug = new_line[0]
     target_list=new_line[1].split(',')
     if drug != "Drug":
