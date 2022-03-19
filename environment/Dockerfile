@@ -1,12 +1,12 @@
-# hash:sha256:349b4a8fff50ff90539870f1249f2baeceb2fce0781c70209a78c91856b31e82
+# hash:sha256:2fe5c07ee137bfbf1b8db2f03e93e888e86bee55c5fa6dfd616bac3bc4582682
 FROM registry.acmecorp-edge.codeocean.com/codeocean/miniconda3:4.7.10-cuda10.1-cudnn7-ubuntu18.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        curl=7.58.0-2ubuntu3.16 \
-        libjpeg-dev=1.5.2-0ubuntu5.18.04.4 \
+        curl \
+        libjpeg-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN conda install -y --channel=conda-forge \
@@ -21,13 +21,6 @@ RUN pip install -U --no-cache-dir \
     scipy==1.7.3 \
     seaborn==0.11.2 \
     sklearn==0.0
-
-RUN mkdir /.code-server \
-	&& cd /.code-server \
-	&& curl -L "https://github.com/coder/code-server/releases/download/v4.0.2/code-server-4.0.2-linux-amd64.tar.gz" -o code-server.tar.gz \
-	&& tar -xvf code-server.tar.gz \
-	&& rm code-server.tar.gz \
-	&& ln -s /.code-server/code-server-4.0.2-linux-amd64/bin/code-server  /usr/bin/code-server
 
 COPY postInstall /
 RUN /postInstall
