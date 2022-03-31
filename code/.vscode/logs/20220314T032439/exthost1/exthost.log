@@ -1,0 +1,282 @@
+[2022-03-14 03:24:44.819] [exthost] [info] Extension host with pid 87 started
+[2022-03-14 03:24:44.827] [exthost] [info] Lock '/root/capsule/code/.vscode/User/workspaceStorage/-13f97471/vscode.lock': Lock acquired.
+[2022-03-14 03:24:45.098] [exthost] [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python'
+[2022-03-14 03:24:45.272] [exthost] [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+[2022-03-14 03:24:45.505] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-03-14 03:24:45.508] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-03-14 03:24:45.796] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-03-14 03:24:45.854] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-03-14 03:24:45.999] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-14 03:24:46.016] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-03-14 03:24:46.019] [exthost] [info] Eager extensions activated
+[2022-03-14 03:24:46.852] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:24:46.853] [exthost] [error] {"message":"Git error","stdout":".gitignore\u00003\u0000.vscode\u0000/root/capsule/.vscode/launch.json\u0000","stderr":"fatal: pathspec '/root/capsule/results/210803_drug-baseline-models/MAML_cmd/run_MAML_drugs0.sh' is beyond a symbolic link\n","exitCode":128}
+[2022-03-14 03:30:00.849] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-server-ready, startup: false, activationEvent: 'onDebugResolve'
+[2022-03-14 03:30:04.381] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-03-14 03:30:04.387] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-03-14 03:30:04.441] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+[2022-03-14 03:37:52.320] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:37:52.320] [exthost] [error] TypeError: Cannot read property 'length' of undefined
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:257359
+	at p (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:262355)
+	at async z.provideCompletionItems (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:95:101392)
+[2022-03-14 03:46:20.496] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:46:20.496] [exthost] [error] Error: ValueError: `column` parameter (10) is not in a valid range (0-4) for line 552 ('    \n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:46:20.497] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:46:20.497] [exthost] [error] Error: ValueError: `column` parameter (8) is not in a valid range (0-4) for line 552 ('    \n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:46:20.518] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:46:20.518] [exthost] [error] Error: ValueError: `column` parameter (8) is not in a valid range (0-4) for line 552 ('    \n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:46:20.805] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:46:20.805] [exthost] [error] Error: ValueError: `column` parameter (8) is not in a valid range (0-4) for line 552 ('    \n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:51:04.967] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:51:04.967] [exthost] [error] Error: ValueError: `column` parameter (28) is not in a valid range (0-0) for line 504 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:51:07.435] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:51:07.435] [exthost] [error] Error: ValueError: `column` parameter (72) is not in a valid range (0-0) for line 540 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:51:20.368] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:51:20.368] [exthost] [error] Error: ValueError: `column` parameter (44) is not in a valid range (0-0) for line 380 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:51:20.370] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:51:20.370] [exthost] [error] Error: ValueError: `column` parameter (37) is not in a valid range (0-0) for line 382 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:59:31.385] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:59:31.385] [exthost] [error] Error: ValueError: `column` parameter (32) is not in a valid range (0-0) for line 520 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:59:31.630] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:59:31.630] [exthost] [error] Error: ValueError: `column` parameter (32) is not in a valid range (0-0) for line 520 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:59:42.521] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:59:42.521] [exthost] [error] Error: ValueError: `column` parameter (52) is not in a valid range (0-31) for line 484 ('for drug in selected_drug_list:\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:59:45.288] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:59:45.288] [exthost] [error] TypeError: Cannot read property 'length' of undefined
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:257359
+	at p (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:262355)
+	at async z.provideCompletionItems (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:95:101392)
+[2022-03-14 03:59:50.967] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:59:50.967] [exthost] [error] Error: ValueError: `column` parameter (72) is not in a valid range (0-0) for line 541 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:59:51.505] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:59:51.505] [exthost] [error] Error: ValueError: `column` parameter (72) is not in a valid range (0-0) for line 541 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:59:51.616] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:59:51.616] [exthost] [error] Error: ValueError: `column` parameter (79) is not in a valid range (0-0) for line 541 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:59:51.675] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:59:51.675] [exthost] [error] Error: ValueError: `column` parameter (79) is not in a valid range (0-0) for line 541 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:59:53.229] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:59:53.229] [exthost] [error] Error: ValueError: `column` parameter (28) is not in a valid range (0-15) for line 486 ('    print(drug)\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 03:59:53.461] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 03:59:53.461] [exthost] [error] Error: ValueError: `column` parameter (28) is not in a valid range (0-15) for line 486 ('    print(drug)\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:00:09.481] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:00:09.481] [exthost] [error] Error: ValueError: `column` parameter (31) is not in a valid range (0-15) for line 486 ('    print(drug)\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:00:17.102] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:00:17.102] [exthost] [error] Error: ValueError: `column` parameter (21) is not in a valid range (0-0) for line 495 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:00:17.503] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:00:17.503] [exthost] [error] Error: ValueError: `column` parameter (22) is not in a valid range (0-9) for line 493 ('    else:\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:15:50.373] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:15:50.373] [exthost] [error] Error: ValueError: `column` parameter (14) is not in a valid range (0-0) for line 559 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:15:50.618] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:15:50.618] [exthost] [error] Error: ValueError: `column` parameter (14) is not in a valid range (0-0) for line 559 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:15:57.621] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:15:57.622] [exthost] [error] Error: ValueError: `column` parameter (19) is not in a valid range (0-0) for line 559 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:15:58.058] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:15:58.058] [exthost] [error] Error: ValueError: `column` parameter (33) is not in a valid range (0-27) for line 553 ('        file_handle.close()\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:15:58.411] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:15:58.412] [exthost] [error] Error: ValueError: `column` parameter (32) is not in a valid range (0-27) for line 553 ('        file_handle.close()\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:16:06.239] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:16:06.239] [exthost] [error] Error: ValueError: `column` parameter (51) is not in a valid range (0-38) for line 556 ('for drug in rename_selected_drug_list:\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:16:06.297] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:16:06.298] [exthost] [error] Error: ValueError: `column` parameter (51) is not in a valid range (0-38) for line 556 ('for drug in rename_selected_drug_list:\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:16:13.161] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:16:13.161] [exthost] [error] Error: ValueError: `column` parameter (48) is not in a valid range (0-27) for line 553 ('        file_handle.close()\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:17:22.702] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:17:22.702] [exthost] [error] Error: ValueError: `column` parameter (30) is not in a valid range (0-15) for line 487 ('    print(drug)\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:21:58.211] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:21:58.211] [exthost] [error] Error: ValueError: `column` parameter (34) is not in a valid range (0-0) for line 546 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:22:32.202] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:22:32.202] [exthost] [error] Error: ValueError: `column` parameter (68) is not in a valid range (0-0) for line 544 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:23:35.687] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:23:35.687] [exthost] [error] Error: ValueError: `column` parameter (43) is not in a valid range (0-27) for line 553 ('        file_handle.close()\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:29:20.075] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:29:20.075] [exthost] [error] Error: ValueError: `column` parameter (43) is not in a valid range (0-38) for line 556 ('for drug in rename_selected_drug_list:\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:29:20.563] [exthost] [error] [ms-python.python] provider FAILED
+[2022-03-14 04:29:20.563] [exthost] [error] Error: ValueError: `column` parameter (44) is not in a valid range (0-0) for line 550 ('\n').
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139560
+	at /.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:139854
+	at Immediate.<anonymous> (/.vscode/extensions/ms-python.python-2021.12.1559732655/out/client/extension.js:67:140217)
+	at processImmediate (internal/timers.js:464:21)
+[2022-03-14 04:35:52.948] [exthost] [info] extension host terminating: parent process 36 does not exist anymore: kill ESRCH (code: ESRCH) (errno: -3)
+[2022-03-14 04:35:52.949] [exthost] [info] Lock '/root/capsule/code/.vscode/User/workspaceStorage/-13f97471/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+[2022-03-14 04:35:52.971] [exthost] [info] Extension host with pid 87 exiting with code 0

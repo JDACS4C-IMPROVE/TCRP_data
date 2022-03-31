@@ -1,0 +1,21 @@
+Jupyter Extension Version: 2021.11.1001552333.
+Python Extension Verison: 2021.12.1559732655.
+Info 15:40:53: Experimentation service retrieved: [object Object]
+Info 15:40:53: ZMQ install verified.
+Info 15:40:54: Experiment status for python is {"enabled":true,"optInto":[],"optOutFrom":[]}
+Info 15:40:54: Process Execution: > /opt/conda/bin/python -m pip list
+> /opt/conda/bin/python -m pip list
+Info 15:43:20: Creating controller for jupyter-notebook with interpreter /opt/conda/bin/python
+Info 15:43:20: Find preferred kernel for ~/capsule/code/process_sanger_drug_cell_line.ipynb with metadata {"kernelspec":{"display_name":"Python 3 (ipykernel)","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.7.3"}} & preferred interpreter /opt/conda/bin/python
+Info 15:43:20: findKernel found base (Python 3.7.3)
+Info 15:43:20: PreferredConnection: .jvsc74a57bd0d4d1e4263499bec80672ea0156c357c1ee493ec2b1c70f0acce89fc37c4a6abe./opt/conda/python./opt/conda/python.-m#ipykernel_launcher found for NotebookDocument: ~/capsule/code/process_sanger_drug_cell_line.ipynb
+Info 15:43:20: TargetController found ID: .jvsc74a57bd0d4d1e4263499bec80672ea0156c357c1ee493ec2b1c70f0acce89fc37c4a6abe./opt/conda/python./opt/conda/python.-m#ipykernel_launcher for document ~/capsule/code/process_sanger_drug_cell_line.ipynb
+Info 15:43:20: Setting controller affinity for ~/capsule/code/process_sanger_drug_cell_line.ipynb .jvsc74a57bd0d4d1e4263499bec80672ea0156c357c1ee493ec2b1c70f0acce89fc37c4a6abe./opt/conda/python./opt/conda/python.-m#ipykernel_launcher
+Info 15:45:55: Notebook Closed ~/capsule/code/process_sanger_drug_cell_line.ipynb
+Info 16:51:00: Shutting down notebooks for 52a529ac-e4dd-4c15-af35-f8fcc4cdd9f5
+Info 16:51:00: Disposing HostJupyterExecution 5ca7d038-ddd8-4449-8064-149b22d1a0e1
+Info 16:51:00: Disposing super HostJupyterExecution 5ca7d038-ddd8-4449-8064-149b22d1a0e1
+Info 16:51:00: Disposing HostJupyterExecution 5ca7d038-ddd8-4449-8064-149b22d1a0e1
+Info 16:51:00: Finished disposing HostJupyterExecution  5ca7d038-ddd8-4449-8064-149b22d1a0e1
+Info 16:51:00: Cleaning up server cache 5ca7d038-ddd8-4449-8064-149b22d1a0e1
+Info 16:51:00: Finished disposing HostJupyterExecution  5ca7d038-ddd8-4449-8064-149b22d1a0e1

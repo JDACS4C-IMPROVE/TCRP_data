@@ -1,0 +1,9 @@
+Experiment 'pythonaacf' is active
+Experiment 'pythonTensorboardExperiment' is active
+Experiment 'pythonInterpreterInfoUnpinned' is active
+> conda info --json
+> /opt/conda/bin/python /.vscode/extensions/ms-python.python-2021.12.1559732655/pythonFiles/interpreterInfo.py
+> python -c "import sys;print(sys.executable)"
+> python -c "import sys;print(sys.executable)"
+> python -c "import sys;print(sys.executable)"
+Python interpreter path: /opt/conda/bin/python

@@ -1,0 +1,124 @@
+Jupyter Extension Version: 2021.11.1001552333.
+Python Extension Verison: 2021.12.1559732655.
+Info 05:34:01: Experimentation service retrieved: [object Object]
+Info 05:34:01: ZMQ install verified.
+Info 05:34:01: Experiment status for python is {"enabled":true,"optInto":[],"optOutFrom":[]}
+Info 05:34:01: Process Execution: > /opt/conda/bin/python -m pip list
+> /opt/conda/bin/python -m pip list
+Info 05:35:04: Creating controller for interactive with interpreter /opt/conda/bin/python
+Info 05:35:04: Starting interactive window with controller ID ms-toolsai.jupyter/.jvsc74a57bd0d4d1e4263499bec80672ea0156c357c1ee493ec2b1c70f0acce89fc37c4a6abe./opt/conda/python./opt/conda/python.-m#ipykernel_launcher (Interactive)
+Info 05:35:04: Setting setActiveController for vscode-interactive:Interactive-1.interactive
+Info 05:35:05: Starting Notebook in kernel.ts id = .jvsc74a57bd0d4d1e4263499bec80672ea0156c357c1ee493ec2b1c70f0acce89fc37c4a6abe./opt/conda/python./opt/conda/python.-m#ipykernel_launcher
+Info 05:35:05: Creating raw notebook for vscode-interactive:Interactive-1.interactive
+Info 05:35:05: Getting preferred kernel for vscode-interactive:Interactive-1.interactive
+Info 05:35:05: Computing working directory vscode-interactive:Interactive-1.interactive
+Info 05:35:05: Starting raw kernel base (Python 3.7.3)
+Info 05:35:05: installMissingDependencies /opt/conda/bin/python
+Info 05:35:05: IPykernel found previously in this enviornment /opt/conda/bin/python
+Info 05:35:05: Kernel launching with ports 9000,9001,9002,9003,9004. Start port is 9000
+Info 05:35:05: Launching kernel daemon for Python 3.7.3 64-bit ('base': conda) # /opt/conda/bin/python
+Info 05:35:05: Creating daemon process for /opt/conda/bin/python with env variables count 48
+Info 05:35:05: Process Execution: > /opt/conda/bin/python -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+> /opt/conda/bin/python -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+Info 05:35:05: Starting kernel from scratch
+Warn 05:35:06: StdErr from Kernel Process /opt/conda/lib/python3.7/site-packages/traitlets/traitlets.py:2205: FutureWarning: Supporting extra quotes around strings is deprecated in traitlets 5.0. You can use 'hmac-sha256' instead of '"hmac-sha256"' if you require traitlets >=5.
+
+Warn 05:35:06: StdErr from Kernel Process   FutureWarning)
+
+Warn 05:35:06: StdErr from Kernel Process /opt/conda/lib/python3.7/site-packages/traitlets/traitlets.py:2160: FutureWarning: Supporting extra quotes around Bytes is deprecated in traitlets 5.0. Use '226828bb-c841-4f2a-85ad-05c887436579' instead of 'b"226828bb-c841-4f2a-85ad-05c887436579"'.
+
+Warn 05:35:06: StdErr from Kernel Process   FutureWarning)
+
+Info 05:35:06: Raw session started and connected
+Started kernel base (Python 3.7.3)
+Info 05:35:06: Finished connecting 211629ac-b6f1-413d-bde8-a272a3beca7c
+Info 05:35:06: UpdateWorkingDirectoryAndPath in Kernel
+Info 05:35:06: changeDirectoryIfPossible
+Info 05:35:06: Executing (status idle) silently Code = import os\nimport sys\n%cd "/root/capsule/code"\nif os.getcwd() not in sys.path:\nsys.path.insert(0,
+Info 05:35:06: Executing silently Code (completed) = import os\nimport sys\n%cd "/root/capsule/code"\nif os.getcwd() not in sys.path:\nsys.path.insert(0,
+Info 05:35:06: Executing (status idle) silently Code = %config Completer.use_jedi = False
+Info 05:35:06: Executing silently Code (completed) = %config Completer.use_jedi = False
+Info 05:35:06: Executing (status idle) silently Code = %config InlineBackend.figure_formats = ['png']
+Info 05:35:06: Executing silently Code (completed) = %config InlineBackend.figure_formats = ['png']
+Info 05:35:06: Executing (status idle) silently Code = import sys\nprint(sys.executable)
+Info 05:35:06: Executing silently Code (completed) = import sys\nprint(sys.executable)
+Info 05:35:06: Waiting for idle on (kernel): 511c65b6-a3f4-4964-998c-308aa56435eb -> idle
+Info 05:35:06: Finished waiting for idle on (kernel): 511c65b6-a3f4-4964-998c-308aa56435eb -> idle
+Info 05:35:06: IPyWidgetScriptSource.initialize
+Info 05:35:06: Executing (status idle) silently Code = __file__ = '/root/capsule/code/process_PDTC.py'
+Info 05:35:06: Executing silently Code (completed) = __file__ = '/root/capsule/code/process_PDTC.py'
+Info 05:35:06: start debugging
+Info 05:35:06: enable debugger attach
+Info 05:35:06: Executing (status idle) silently Code = import sys\nsys.path.extend(['/.vscode/extensions/ms-python.python-2021.12.1559732655/pythonFiles/li
+Info 05:35:06: Executing silently Code (completed) = import sys\nsys.path.extend(['/.vscode/extensions/ms-python.python-2021.12.1559732655/pythonFiles/li
+Info 05:35:06: Appending paths: ['/root/capsule/code',
+ '/.vscode/extensions/ms-toolsai.jupyter-2021.11.1001552333/pythonFiles',
+ '/.vscode/extensions/ms-toolsai.jupyter-2021.11.1001552333/pythonFiles/lib/python',
+ '/opt/conda/lib/python37.zip',
+ '/opt/conda/lib/python3.7',
+ '/opt/conda/lib/python3.7/lib-dynload',
+ '',
+ '/opt/conda/lib/python3.7/site-packages',
+ '/opt/conda/lib/python3.7/site-packages/IPython/extensions',
+ '/root/.ipython',
+ '/.vscode/extensions/ms-python.python-2021.12.1559732655/pythonFiles/lib/python']
+Info 05:35:06: Executing (status idle) silently Code = import debugpy;debugpy.listen(('localhost', 0))
+Info 05:35:07: Executing silently Code (completed) = import debugpy;debugpy.listen(('localhost', 0))
+Info 05:35:07: connected to notebook during debugging
+Info 05:35:08: Executing (status idle) silently Code = import debugpy;debugpy.wait_for_client()
+Info 05:35:08: Executing silently Code (completed) = import debugpy;debugpy.wait_for_client()
+Info 05:35:08: import startup: undefined
+Info 05:35:08: Executing (and forget) (status busy) silently Code = from debugpy import trace_this_thread;trace_this_thread(False)
+Info 05:35:08: Adding hash for 1 = dc96635a1768 with 23 lines
+Info 05:35:08: Executing (and forget) (status idle) silently Code = from debugpy import trace_this_thread;trace_this_thread(True)
+Error 05:35:13: Error in waiting for cell to complete [Error: Canceled future for execute_request message before replies were done
+	at t.KernelShellFutureHandler.dispose (/.vscode/extensions/ms-toolsai.jupyter-2021.11.1001552333/out/client/extension.js:51:428489)
+	at C.<anonymous> (/.vscode/extensions/ms-toolsai.jupyter-2021.11.1001552333/out/client/extension.js:66:293921)
+	at a.fire (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:66:1732)
+	at /.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:95:70131
+	at a.fire (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at p.acceptDocumentsAndEditorsDelta (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:95:75092)
+	at p.$acceptDocumentsAndEditorsDelta (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:95:73413)
+	at t._doInvokeHandler (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:99:13802)
+	at t._invokeHandler (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:99:13486)
+	at t._receiveRequest (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:99:12148)
+	at t._receiveOneMessage (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:99:10826)
+	at /.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:99:8922
+	at a.fire (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at P.fire (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:74:15967)
+	at /.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:114:30660
+	at a.fire (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at P.fire (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:74:15967)
+	at g._receiveMessage (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:74:21237)
+	at /.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:74:18115
+	at a.fire (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at b.acceptChunk (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:74:13328)
+	at /.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:74:12676
+	at a.fire (/.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:66:1712)
+	at /.code-server/code-server-4.0.2-linux-amd64/vendor/modules/code-oss-dev/out/vs/server/remoteExtensionHostProcess.js:114:19664
+	at afterWrite (internal/streams/writable.js:466:5)
+	at onwrite (internal/streams/writable.js:446:7)
+	at InflateRaw.afterTransform (internal/streams/transform.js:103:3)
+	at Zlib.processCallback (zlib.js:607:8)]
+Info 05:35:13: Cell -1 executed with state Idle
+Info 05:35:13: Finished execution for d83c4f4d-9530-43d1-a241-91835f0b4203
+Info 05:35:13: stop debugging
+Info 05:35:13: Executing (and forget) (status busy) silently Code = from debugpy import trace_this_thread;trace_this_thread(False)
+Info 05:35:15: Disposing kernel .jvsc74a57bd0d4d1e4263499bec80672ea0156c357c1ee493ec2b1c70f0acce89fc37c4a6abe./opt/conda/python./opt/conda/python.-m#ipykernel_launcher for notebook vscode-interactive:Interactive-1.interactive due to selection of another kernel or closing of the notebook
+Info 05:35:15: Dispose kernel file:///root/capsule/code/process_PDTC.py
+Info 05:35:15: Dispose Kernel process
+Info 05:35:15: kill daemon
+Info 05:35:15: Notebook Closed vscode-interactive:Interactive-1.interactive
+Info 05:35:15: Closing interactive window: vscode-interactive:Interactive-1.interactive
+Info 05:35:15: Pre-warming kernel daemon for ~/capsule
+Info 05:35:15: IPykernel found previously in this enviornment /opt/conda/bin/python
+Info 05:35:15: Creating daemon process for /opt/conda/bin/python with env variables count 48
+Info 05:35:15: Process Execution: > /opt/conda/bin/python -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+> /opt/conda/bin/python -m vscode_datascience_helpers.daemon --daemon-module=vscode_datascience_helpers.kernel_launcher_daemon -v
+Info 06:09:44: Shutting down notebooks for 211629ac-b6f1-413d-bde8-a272a3beca7c
+Info 06:09:44: Disposing HostJupyterExecution b58dcde5-1ba3-4e26-aabd-f4d98ee41eb1
+Info 06:09:44: Disposing super HostJupyterExecution b58dcde5-1ba3-4e26-aabd-f4d98ee41eb1
+Info 06:09:44: Disposing HostJupyterExecution b58dcde5-1ba3-4e26-aabd-f4d98ee41eb1
+Info 06:09:44: Finished disposing HostJupyterExecution  b58dcde5-1ba3-4e26-aabd-f4d98ee41eb1
+Info 06:09:44: Cleaning up server cache b58dcde5-1ba3-4e26-aabd-f4d98ee41eb1
+Info 06:09:44: Finished disposing HostJupyterExecution  b58dcde5-1ba3-4e26-aabd-f4d98ee41eb1

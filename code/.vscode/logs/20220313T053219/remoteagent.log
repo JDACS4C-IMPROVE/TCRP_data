@@ -1,0 +1,31 @@
+[2022-03-13 05:32:19.094] [remoteagent] [info] Extension host agent started.
+[2022-03-13 05:32:21.247] [remoteagent] [info] [10.0.147.84][33098c13][ManagementConnection] New connection established.
+[2022-03-13 05:32:22.183] [remoteagent] [info] [10.0.147.84][68f66bbc][ExtensionHostConnection] New connection established.
+[2022-03-13 05:32:22.190] [remoteagent] [info] [10.0.147.84][68f66bbc][ExtensionHostConnection] <88> Launched Extension Host Process.
+[2022-03-13 05:33:51.400] [remoteagent] [info] Installing extension: ms-python.python
+[2022-03-13 05:33:53.260] [remoteagent] [info] Installing extension: ms-toolsai.jupyter
+[2022-03-13 05:33:54.776] [remoteagent] [info] Downloaded extension: ms-toolsai.jupyter /root/capsule/code/.vscode/CachedExtensionVSIXs/ms-toolsai.jupyter-2021.11.1001552333
+[2022-03-13 05:33:55.305] [remoteagent] [info] Extracted extension to /.vscode/extensions/.f332b146-1c67-4893-8d0c-4485979b42ea: ms-toolsai.jupyter
+[2022-03-13 05:33:55.316] [remoteagent] [info] Renamed to /.vscode/extensions/ms-toolsai.jupyter-2021.11.1001552333
+[2022-03-13 05:33:55.319] [remoteagent] [info] Extracting completed. ms-toolsai.jupyter
+[2022-03-13 05:33:56.857] [remoteagent] [info] Downloaded extension: ms-python.python /root/capsule/code/.vscode/CachedExtensionVSIXs/ms-python.python-2021.12.1559732655
+[2022-03-13 05:33:58.522] [remoteagent] [info] Extracted extension to /.vscode/extensions/.3e731664-f4fd-43ae-a526-7703dfd1b08e: ms-python.python
+[2022-03-13 05:33:58.538] [remoteagent] [info] Renamed to /.vscode/extensions/ms-python.python-2021.12.1559732655
+[2022-03-13 05:33:58.540] [remoteagent] [info] Extracting completed. ms-python.python
+[2022-03-13 05:33:58.540] [remoteagent] [info] Extension installed successfully: ms-toolsai.jupyter
+[2022-03-13 05:33:58.540] [remoteagent] [info] Extension installed successfully: ms-python.python
+[2022-03-13 05:35:06.427] [remoteagent] [info] [10.0.147.84][68f66bbc][ExtensionHostConnection] <88> Starting WebSocket: RAW/api/kernels/511c65b6-a3f4-4964-998c-308aa56435eb
+
+[2022-03-13 06:09:38.189] [remoteagent] [info] [10.0.147.84][0f5e750d][ManagementConnection] New connection established.
+[2022-03-13 06:09:39.065] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 791
+[2022-03-13 06:09:39.201] [remoteagent] [info] [10.0.147.84][8c0d8e7a][ExtensionHostConnection] New connection established.
+[2022-03-13 06:09:39.209] [remoteagent] [info] [10.0.147.84][8c0d8e7a][ExtensionHostConnection] <2130> Launched Extension Host Process.
+[2022-03-13 06:09:39.239] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 792
+[2022-03-13 06:09:39.609] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 793
+[2022-03-13 06:09:39.759] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 794
+[2022-03-13 06:09:39.806] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 795
+[2022-03-13 06:09:40.988] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 796
+[2022-03-13 06:09:41.002] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 797
+[2022-03-13 06:09:41.030] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 798
+[2022-03-13 06:09:41.093] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 799
+[2022-03-13 06:09:41.111] [remoteagent] [warning] RequestStore#acceptReply was called without receiving a matching request 800

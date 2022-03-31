@@ -1,12 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
 
 import matplotlib
 matplotlib.use('Agg')
-#get_ipython().run_line_magic('matplotlib', 'inline')
 
 import os
 import pandas as pd
@@ -24,15 +18,8 @@ import itertools
 import mygene
 import re
 
-
-# In[2]:
-
-
 selected_exp_gene_list = pd.read_csv("/data/common_exp_features.tsv",sep="\t")["Gene"].tolist()
 selected_mut_gene_list = pd.read_csv("/data/common_mut_features.tsv",sep="\t")["Gene"].tolist()
-
-
-# In[3]:
 
 
 def load_network(network_file_list, valid_gene_list):
@@ -88,10 +75,6 @@ def list2index(cell_line_list, cell_line2id):
         
     return np.asarray(cell_line_idx_list)
 
-
-# In[49]:
-
-
 PDTC_data_file = '/data/PTDC/'
 PDTC_exp_data_file = PDTC_data_file + 'ExpressionModels.tsv'
 PDTC_drug_cell_line_file = PDTC_data_file + 'DrugResponsesAUCModels.tsv'
@@ -128,8 +111,6 @@ pd.set_option('display.max_columns', 20)
 pd.set_option('display.max_row', 10)
 
 
-# In[53]:
-
 
 exp_df = pd.read_csv(exp_data_file, sep='\t', index_col=0)
 exp_df = exp_df.T[1:]
@@ -146,11 +127,6 @@ exp_df = exp_df.groupby(level=0).first()
 exp_df = exp_df[selected_exp_gene_list]
 exp_gene_list = list(exp_df.columns)
 exp_cell_line_list = list(exp_df.index.unique())
-
-# # print len(exp_cell_line_list), len(exp_gene_list)
-
-
-# In[59]:
 
 
 PDTC_exp_df = pd.read_csv(PDTC_exp_data_file, sep='\t', index_col=0).fillna(0)
@@ -169,16 +145,9 @@ PDTC_exp_df = PDTC_exp_df[selected_exp_gene_list]
 PDTC_exp_gene_list = list(PDTC_exp_df.columns)
 PDTC_exp_cell_line_list = list(PDTC_exp_df.index.unique())
 
-
-# In[67]:
-
-
 exp_df = pd.concat([exp_df,PDTC_exp_df])
 exp_gene_list = list(exp_df.columns)
 exp_cell_line_list = list(exp_df.index.unique())
-
-
-# In[73]:
 
 
 maf = pd.read_csv(mutation_data_file, sep=',', index_col=0).fillna(0)
@@ -189,11 +158,6 @@ mutation_df = mutation_df[selected_mut_gene_list]
 mutation_gene_list = list(mutation_df.columns)
 mutation_cell_line_list = list(mutation_df.index.unique())
 
-# print len(mutation_cell_line_list), len(mutation_gene_list)
-mutation_df
-
-
-# In[74]:
 
 
 PDTC_maf = pd.read_csv(PDTC_mutation_data_file, sep='\t', index_col=0).fillna(0)
@@ -207,22 +171,9 @@ PDTC_mutation_cell_line_list = list(PDTC_mutation_df.index.unique())
 PDTC_mutation_df
 
 
-# In[75]:
-
-
 mutation_df = pd.concat([mutation_df,PDTC_mutation_df])
 mutation_gene_list = list(mutation_df.columns)
 mutation_cell_line_list = list(mutation_df.index.unique())
-
-
-# In[76]:
-
-
-mutation_df
-
-
-# In[77]:
-
 
 file_handle = open(drug_target_file)
 
@@ -252,12 +203,6 @@ for line in file_handle:
                 drug_target_map[drug].append(target.strip())
                 drug_target_list.append(target.strip())
 
-# print len(drug_target_list)
-# print drug_target_map
-
-
-# In[82]:
-
 
 drugs_legend = pd.read_csv('/data/GDSC/Screened_Compounds.csv', sep=',', index_col=0)
 
@@ -267,28 +212,12 @@ for index in list(drugs_legend.index) :
     drug_name = drugs_legend.loc[index,'Drug Name']
     drug2id_mapping[ drug_name ] = index
 
-
-# In[83]:
-
-
 valid_gene_list = list(set(drug_target_list) | set(exp_gene_list) | set(mutation_gene_list))
-
-
-# In[84]:
-
 
 network_list = [new_network_file+inbiomap_file, new_network_file+pathwaycomm_file]
 gene_neighbor_map =  load_network(network_list, valid_gene_list)
 
-
-# In[85]:
-
-
 gene_name_df = pd.read_table('/data/HUGO_protein-coding_gene.tsv',index_col=25, sep='\t')
-
-
-# In[86]:
-
 
 gene_name_map = {}
 
@@ -301,10 +230,6 @@ for uniprot_gene in gene_name_df.index:
         gene_name_map[uniprot_gene] = gene_name_df.loc[uniprot_gene, 'symbol'][0]
     else:
         gene_name_map[uniprot_gene] = gene_name_df.loc[uniprot_gene, 'symbol']
-
-
-# In[87]:
-
 
 corum_df = pd.read_table(new_network_file + 'allComplexes.txt', index_col=0)
 
@@ -345,10 +270,6 @@ for i, gene in enumerate(query_gene_list):
         
 # print len(not_found_gene_list), 'symbol name not found', len(gene_name_map)
 
-
-# In[88]:
-
-
 corum_df = pd.read_table(new_network_file + 'allComplexes.txt', index_col=0)
 
 for index in corum_df.index:
@@ -374,10 +295,6 @@ for index in corum_df.index:
         gene_neighbor_map[gene1].add(gene2)
         gene_neighbor_map[gene2].add(gene1)
 
-
-# In[89]:
-
-
 gene_exp_neighbor_map = {}
 exp_matrix = exp_df.values
 
@@ -397,13 +314,6 @@ for i in range(len(exp_gene_list)):
             
     if gene1 not in gene_exp_neighbor_map[gene1]:
         print (gene1, 'not in itself?', P[i,i])
-
-
-# In[97]:
-
-
-# In[98]:
-
 
 drug_feature_list = []
 drug_neighbor_map = {}
@@ -430,30 +340,12 @@ sns.set_style("whitegrid")
 sns.set_context("talk")
 sns.distplot(drug_feature_list,color='r',bins=60,kde=False,norm_hist=False)
 
-
-# In[ ]:
-
-
-drug2id_mapping
-
-
-# In[111]:
-
-
 drugs = pd.read_csv(drug_cell_line_file,index_col=2)
 drugs = drugs.drop(["DATASET_VERSION","IC50_RESULTS_ID","MAX_CONC_MICROMOLAR","RMSE"],axis=1)
 drugs_cell_line_list = list(drugs.index.unique())
 # print len(drugs_cell_line_list)
 drug_list = drugs["DRUG_ID"]
 new_drug_id = []
-#cell_line_drug_matrix = drugs.loc[drugs['DRUG_ID'] == 1026]
-#cell_line_drug_matrix.loc[[924100,910924],'LN_IC50'].values
-drugs
-#cell_line_drug_matrix.loc[ [909758, 924247, 924107],'DRUG_ID' ]
-
-
-# In[125]:
-
 
 PDTC_drugs = pd.read_csv(PDTC_drug_cell_line_file,sep='\t',index_col=0)
 PDTC_drugs_cell_line_list = list(PDTC_drugs.index.unique())
@@ -469,36 +361,15 @@ PDTC_drugs["DRUG_ID"] = new_drug_id
 PDTC_drugs["LN_IC50"] = np.log(PDTC_drugs["iC50"])
 PDTC_drugs = PDTC_drugs.drop(["Drug","iC50","D1_CONC","D5_CONC","perc.iC50"],axis=1)
 
-
-# In[126]:
-
-# In[127]:
-
-
 drugs = pd.concat([drugs,PDTC_drugs])
 
-
-# In[130]:
-
-
-drugs
 drugs_cell_line_list = list(drugs.index.unique())
 
-
-# In[131]:
-
-
 cell_line_list = list(set(drugs_cell_line_list)&set(exp_cell_line_list)&set(mutation_cell_line_list) )
-print(len(cell_line_list))
-
-
-# In[146]:
-
 
 cell_line_legend = pd.read_csv(cell_line_detail_file, index_col=1)
 PDTC_cell_line = pd.DataFrame({'Line': ["BRCA"]*len(PDTC_exp_cell_line_list), 'Site':["PDTC"]*len(PDTC_exp_cell_line_list),"Histology":["breast"]*len(PDTC_exp_cell_line_list)},index=PDTC_exp_cell_line_list)
 cell_line_legend = pd.concat([cell_line_legend,PDTC_cell_line])
-## print cell_line_legend
 
 tissue_map = {}
 
@@ -522,31 +393,11 @@ for tissue, cell_line in tissue_map.items():
 print('How many tissues', len(tissue_map))
 print('Large tissues', large_tissue_number)
 
-'''
-file_handle = open(data_file + "sanger_tissue_cell_line_list.pkl","wb")
-pickle.dump(tissue_map,file_handle)
-file_handle.close()
-'''
-
-
-# In[147]:
-
-
-len(valid_gene_list)
-
-
-# In[148]:
-
-
 new_exp_gene_list = []
 for i in exp_gene_list:
     if i in valid_gene_list:
         new_exp_gene_list.append(i)
 
-
-# In[150]:
-
-
 exp_stdev = np.std(exp_df.values, axis=0)
 exp_perc = np.percentile(exp_stdev,10)
 filtered_exp_gene_list = np.asarray(exp_gene_list)[exp_stdev > exp_perc]
@@ -554,25 +405,11 @@ filtered_exp_gene_list = np.asarray(exp_gene_list)[exp_stdev > exp_perc]
 mut_sum = np.sum(mutation_df.values,axis=0)
 filtered_mut_gene_list = np.asarray(mutation_gene_list)[mut_sum > 5]
 
-# print np.sum(exp_stdev > exp_perc), np.sum(mut_sum > 5)#, np.sum(cnv_stdev > cnv_perc)
-
-#new_exp_df = exp_df.loc[ cell_line_list, list(filtered_exp_gene_list) ]
-#new_mutation_df = mutation_df.loc[ cell_line_list, list(filtered_mut_gene_list) ]
-
 new_exp_df = exp_df.loc[ :, list(filtered_exp_gene_list) ]
 new_mutation_df = mutation_df.loc[ :, list(filtered_mut_gene_list) ]
-
-
-# In[151]:
-
-
-len(filtered_exp_gene_list)
-
 
 new_data_file = ''
 
-# print mutation_df.shape, exp_df.shape
-
 exp_stdev = np.std(exp_df.values, axis=0)
 exp_perc = np.percentile(exp_stdev,10)
 filtered_exp_gene_list = np.asarray(exp_gene_list)[exp_stdev > exp_perc]
@@ -580,30 +417,18 @@ filtered_exp_gene_list = np.asarray(exp_gene_list)[exp_stdev > exp_perc]
 mut_sum = np.sum(mutation_df.values,axis=0)
 filtered_mut_gene_list = np.asarray(mutation_gene_list)[mut_sum > 5]
 
-# print np.sum(exp_stdev > exp_perc), np.sum(mut_sum > 5)#, np.sum(cnv_stdev > cnv_perc)
-
-#new_exp_df = exp_df.loc[ cell_line_list, list(filtered_exp_gene_list) ]
-#new_mutation_df = mutation_df.loc[ cell_line_list, list(filtered_mut_gene_list) ]
-
 new_exp_df = exp_df.loc[ :, list(filtered_exp_gene_list) ]
 new_mutation_df = mutation_df.loc[ :, list(filtered_mut_gene_list) ]
-
-#cell_line2id = dict(zip(cell_line_list, range(len(cell_line_list))))
 
 rename_selected_drug_list = []
 
 for drug in selected_drug_list:
     print(drug)
-#     if drug != 'Nutlin-3a (-)':
-#         continue
     
     if drug not in drug2id_mapping:
         print('drug name wrong', drug)
     else:
         cell_line_drug_matrix = drugs.loc[drugs['DRUG_ID'] == drug2id_mapping[drug]]
-
-        ## print cell_line_drug_matrix
-        #these control the second dim of the file, need to make these the same 
         
         feature_exp_gene_list = list( set(drug_neighbor_map[drug]) & set(filtered_exp_gene_list) )
         feature_mut_gene_list = list( set(drug_neighbor_map[drug]) & set(filtered_mut_gene_list) )
@@ -630,7 +455,6 @@ for drug in selected_drug_list:
 
         for tissue, tissue_cell_line_list in tissue_map.items():
             if tissue=="PDTC":
-                print("This is PDTC")
             drug_specific_cell_line = set( cell_line_drug_matrix.index ) & set( tissue_cell_line_list )
             drug_specific_cell_line = list(drug_specific_cell_line)
             drug_tissue_map[tissue] = drug_specific_cell_line
@@ -669,62 +493,6 @@ for drug in rename_selected_drug_list:
 file_handle.close()
 
 
-# In[136]:
-
-
-len(drug_neighbor_map["AZ628"])
-
-
-# In[86]:
-
-
-len(drug_tissue_map['breast'])
-
-
-# In[87]:
-
-
-import pickle
-
-
-# In[37]:
-
-
-cell_line_loc = '/cellar/users/samsonfong/Projects/tcrp-v2/from-ma/cell_line_lists/'
-
-
-# In[38]:
-
-
-with open('/data/drug_feature/KU-55933/KU', 'rb') as f: 
-    tmap= pickle.load(f)
-
-
-# In[48]:
-
-
-tmap.keys()
-
-
-# In[49]:
-
-
-len(tmap['lung'])
-
-
-# In[88]:
-
-
-f = np.load('/data/drug_feature/KU-55933/lung_KU-55933_feature.npy')
-
-
-# In[89]:
-
-
-f.shape
-
-
-# In[ ]:
 
 
 

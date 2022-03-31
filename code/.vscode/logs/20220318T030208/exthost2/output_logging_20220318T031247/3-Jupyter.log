@@ -1,0 +1,14 @@
+Jupyter Extension Version: 2021.11.1001552333.
+Python Extension Verison: 2021.12.1559732655.
+Info 03:12:48: Experimentation service retrieved: [object Object]
+Info 03:12:48: ZMQ install verified.
+Info 03:12:49: Experiment status for python is {"enabled":true,"optInto":[],"optOutFrom":[]}
+Info 03:12:49: Process Execution: > /opt/conda/bin/python -m pip list
+> /opt/conda/bin/python -m pip list
+Info 03:32:26: Shutting down notebooks for 40a73f91-a3eb-401b-b63d-928848f10bdc
+Info 03:32:26: Disposing HostJupyterExecution 503e8dcd-ff57-4fe4-ac1f-76e5868cc3bf
+Info 03:32:26: Disposing super HostJupyterExecution 503e8dcd-ff57-4fe4-ac1f-76e5868cc3bf
+Info 03:32:26: Disposing HostJupyterExecution 503e8dcd-ff57-4fe4-ac1f-76e5868cc3bf
+Info 03:32:26: Finished disposing HostJupyterExecution  503e8dcd-ff57-4fe4-ac1f-76e5868cc3bf
+Info 03:32:26: Cleaning up server cache 503e8dcd-ff57-4fe4-ac1f-76e5868cc3bf
+Info 03:32:26: Finished disposing HostJupyterExecution  503e8dcd-ff57-4fe4-ac1f-76e5868cc3bf

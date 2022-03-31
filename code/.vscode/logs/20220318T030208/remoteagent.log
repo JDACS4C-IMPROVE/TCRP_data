@@ -1,0 +1,19 @@
+[2022-03-18 03:02:09.005] [remoteagent] [info] Extension host agent started.
+[2022-03-18 03:02:11.297] [remoteagent] [info] [10.0.147.84][e9c7198c][ManagementConnection] New connection established.
+[2022-03-18 03:02:12.797] [remoteagent] [info] [10.0.147.84][370ddd76][ExtensionHostConnection] New connection established.
+[2022-03-18 03:02:12.804] [remoteagent] [info] [10.0.147.84][370ddd76][ExtensionHostConnection] <87> Launched Extension Host Process.
+[2022-03-18 03:03:58.267] [remoteagent] [info] Installing extension: ms-python.python
+[2022-03-18 03:03:59.142] [remoteagent] [info] Installing extension: ms-toolsai.jupyter
+[2022-03-18 03:04:00.772] [remoteagent] [info] Downloaded extension: ms-toolsai.jupyter /root/capsule/code/.vscode/CachedExtensionVSIXs/ms-toolsai.jupyter-2021.11.1001552333
+[2022-03-18 03:04:01.280] [remoteagent] [info] Extracted extension to /.vscode/extensions/.f1629105-51cb-4d08-8882-6266995da51b: ms-toolsai.jupyter
+[2022-03-18 03:04:01.291] [remoteagent] [info] Renamed to /.vscode/extensions/ms-toolsai.jupyter-2021.11.1001552333
+[2022-03-18 03:04:01.293] [remoteagent] [info] Extracting completed. ms-toolsai.jupyter
+[2022-03-18 03:04:02.885] [remoteagent] [info] Downloaded extension: ms-python.python /root/capsule/code/.vscode/CachedExtensionVSIXs/ms-python.python-2021.12.1559732655
+[2022-03-18 03:04:04.403] [remoteagent] [info] Extracted extension to /.vscode/extensions/.9b984d70-6806-4a34-8472-96b8c06a4ff6: ms-python.python
+[2022-03-18 03:04:04.417] [remoteagent] [info] Renamed to /.vscode/extensions/ms-python.python-2021.12.1559732655
+[2022-03-18 03:04:04.419] [remoteagent] [info] Extracting completed. ms-python.python
+[2022-03-18 03:04:04.419] [remoteagent] [info] Extension installed successfully: ms-toolsai.jupyter
+[2022-03-18 03:04:04.419] [remoteagent] [info] Extension installed successfully: ms-python.python
+[2022-03-18 03:12:44.409] [remoteagent] [info] [10.0.147.84][2d72d6e1][ManagementConnection] New connection established.
+[2022-03-18 03:12:45.570] [remoteagent] [info] [10.0.147.84][db529350][ExtensionHostConnection] New connection established.
+[2022-03-18 03:12:45.577] [remoteagent] [info] [10.0.147.84][db529350][ExtensionHostConnection] <1219> Launched Extension Host Process.

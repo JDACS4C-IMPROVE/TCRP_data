@@ -1,12 +1,12 @@
-# hash:sha256:2fe5c07ee137bfbf1b8db2f03e93e888e86bee55c5fa6dfd616bac3bc4582682
+# hash:sha256:15e33e902dafe101608e2f95dfd0a410f8de5b873b220727295dda13d2fe9f9e
 FROM registry.acmecorp-edge.codeocean.com/codeocean/miniconda3:4.7.10-cuda10.1-cudnn7-ubuntu18.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-        curl \
-        libjpeg-dev \
+        curl=7.58.0-2ubuntu3.16 \
+        libjpeg-dev=1.5.2-0ubuntu5.18.04.4 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN conda install -y --channel=conda-forge \
