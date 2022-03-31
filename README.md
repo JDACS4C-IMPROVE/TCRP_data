@@ -2,48 +2,18 @@
 
 TCRP (Transfer of Cellular Response Prediction) is a few-shot machine learning algorithm to perform transfer learning for drug response predictions in cancer. It is used to train a neural network model using data in one experimental context (e.g. cell lines) that can be readily tuned to new contexts (e.g. patients) using few additional samples. In pilot experiments, the model has been shown to quickly adapt when switching among different tissue types and in moving from cell-line models to clinical contexts, including patient-derived tumor cells and patient-derived xenografts.
 
-This GitHub repository provides an implementation of TCRP as an easy-to-use Python program.
-
-**A refactored version of this code is being worked on [here](https://github.com/shfong/tcrp-reproduce)**. This refactorization makes the package installable and provides detailed examples. 
-
-# Frequently Asked Questions
-
-[Click here for a list of FAQs](https://github.com/shfong/tcrp-reproduce/blob/public/tcrp-faq.md).
-
-# Publication
+The associated publication for this method can be found via this citation:
 
 Ma J, Fong SH, Luo Y., Bakkenist CJ, Shen JP, Mourragui S, Wessels LFA, Hafner M, Sharan R, Peng J, Ideker T.  Few-shot learning creates predictive models of drug response that translate from high-throughput screens to individual patients. Nat Cancer. 2021 Feb;2(2):233-244. doi: 10.1038/s43018-020-00169-2. Epub 2021 Jan 25. PMID: 34223192 [Pubmed](https://pubmed.ncbi.nlm.nih.gov/34223192/)
 
-# Model Access
+This GitHub repository provides an implementation of data preprocessing to generate model input in an attempt to reproduce results from Challenge 2 of the publication: transfer to PDTCs.
 
-The model can be downloaded here: https://idekerlab.ucsd.edu/projects/tcrp/tcrp_model.tar.gz
+# Running the code
 
-# Model Overview
-<img src="images/Figure1_github-01.png" alt="Model overview" width="60%"/>
+Install the specified dependencies in requirements.txt, or run the Dockerfile in the environment folder. 
 
-# Directory Structure
+Generating input for the TCRP model is as simple as running the notebook "code/Process_merged.ipynb". This notebook will receive both GDSC and PDTC dataset files (provided) as input, and will generate drug-specific feature and label files under the path "/data/merged". To run the TCRP model with this data, you must take this resutling folder and move it to this [TCRP model repository](https://github.com/emilyso-99/TCRP_pipeline)(instructions on paths are outlined)
 
-*code*: folder containing Python code for both neural network training and prediction.
-*data*: Training and testing data. We include the training data for the drug Sorafenib as an example.
-
-# Dependencies
-
-The code is developed under Python 2.7 and PyTorch 0.4.1.post2. See [here](https://pytorch.org/) for installation and basic tutorials. No other dependencies are required.
-
-# Data Preparations
-
-For the pre-training phase, please prepare the feature and label files for each task in the same folder. For the few-shot learning phase, please prepare the feature and label files for the target domain in the same folder used for pre-training. Use the option ‘-feature_dic’ to specify the name of the folder. These names can be changed in the ‘load_data’ and ‘load_data_PDTC’ functions in the util.py file. An example file, ‘Sorafenib_tissue_map.pkl’, is included in the data/ folder. Please use option ‘-tissue_list’ to specify the file to use.
-Please also prepare a ‘task list’ file to store the detailed information of each sub-task in the pre-training phase. It is a Python dictionary stored in a pickle file. The key of that dictionary is the name of the sub-task, which should be the same as the feature and label file. For example, if the sub-task is called ‘lung’, then the corresponding feature and label files should be ‘lung_Sorafenib_feature.npy’ and ‘large_Sorafenib_label.npy’, respectively. 
-
-# Demo
-
-## Run Command: 
-
-```python tcrp_train.py --drug Sorafenib --tissue_num 12 --meta_batch_size 10 --meta_lr 0.001 --inner_lr 0.001 --layer 1 --hidden 20 --K 1```
-
-## Output: 
-
-The model trained for each epoch will be saved in the ‘--model_dic’ folder. Please modify the code in line 96 of tcrp_train.py if another location is desired for storing the models.
 
 ## Data Availability: 
 
