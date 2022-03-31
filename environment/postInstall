@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-set -e
-conda install pytorch=0.4.1 cuda90 -c pytorch
