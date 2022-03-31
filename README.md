@@ -10,7 +10,7 @@ This GitHub repository provides an implementation of data preprocessing to gener
 
 # Running the code
 
-Install the specified dependencies in requirements.txt, or run the Dockerfile in the environment folder. 
+Install the specified dependencies in requirements.txt (only CPU needed)
 
 Generating input for the TCRP model is as simple as running the notebook "code/Process_merged.ipynb". This notebook will receive both GDSC and PDTC dataset files (provided) as input, and will generate drug-specific feature and label files under the path "/data/merged". To run the TCRP model with this data, you must take this resutling folder and move it to this [TCRP model repository](https://github.com/emilyso-99/TCRP_pipeline)(instructions on paths are outlined)
 
