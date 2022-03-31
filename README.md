@@ -1,5 +1,5 @@
 # TCRP data 
-Adopted from repository [tcrp-reproduce] (https://github.com/shfong/tcrp-reproduce/blob/public/tcrp/data_preparation/process_sanger_drug_cell_line.ipynb) 
+Adopted from repository [tcrp-reproduce](https://github.com/shfong/tcrp-reproduce/blob/public/tcrp/data_preparation/process_sanger_drug_cell_line.ipynb) 
 # Introduction
 
 TCRP (Transfer of Cellular Response Prediction) is a few-shot machine learning algorithm to perform transfer learning for drug response predictions in cancer. It is used to train a neural network model using data in one experimental context (e.g. cell lines) that can be readily tuned to new contexts (e.g. patients) using few additional samples. In pilot experiments, the model has been shown to quickly adapt when switching among different tissue types and in moving from cell-line models to clinical contexts, including patient-derived tumor cells and patient-derived xenografts.
