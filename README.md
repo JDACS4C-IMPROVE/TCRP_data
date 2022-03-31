@@ -21,4 +21,3 @@ The drug response data used in the paper for each cell line can be downloaded fr
 
 Expression data, somatic mutations and drug responses for the analysis of Patient-Derived Tumor Cells (PDTC) reported in the paper can be downloaded from the following URL: http://figshare.com/articles/Bruna_et_al_A_biobank_of_breast_cancer_explants_with_preserved_intra-tumor_heterogeneity_to_screen_anticancer_compounds_Cell_2016/2069274. 
 
-All relevant data for the Patient Derived Xenograft (PDX) models can be extracted from Supplementary Table 1 of the paper ‘High-throughput screening using patient-derived tumor xenografts to predict clinical trial drug response.’
