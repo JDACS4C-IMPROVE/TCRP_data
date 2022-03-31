@@ -17,7 +17,6 @@ Generating input for the TCRP model is as simple as running the notebook "code/P
 
 ## Data Availability: 
 
-The gene expression and somatic mutation profiles used in the paper for each cell line are from the Cancer Cell Line Encyclopedia (CCLE) project. These data can be downloaded from the DepMap website: http://depmap.org/portal/download/. 
 The drug response data used in the paper for each cell line can be downloaded from the GDSC 1000 website: http://www.cancerrxgene.org/gdsc1000/GDSC1000_WebResources/.
 
 Expression data, somatic mutations and drug responses for the analysis of Patient-Derived Tumor Cells (PDTC) reported in the paper can be downloaded from the following URL: http://figshare.com/articles/Bruna_et_al_A_biobank_of_breast_cancer_explants_with_preserved_intra-tumor_heterogeneity_to_screen_anticancer_compounds_Cell_2016/2069274. 
